@@ -1,0 +1,32 @@
+.circular-image {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.circular-image img{
+    width:100%;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font: 14px arial;
+}
