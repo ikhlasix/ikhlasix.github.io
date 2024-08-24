@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doktor | Dokumentasi dan Repositori Aplikasi Pegadaian</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-light">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="../assets/images/logo-web-white.png" width="200px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid px-5 py-5">
+      <div class="card px-5 py-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Add Application</h4>
+          </div>
+          <div class="col-sm-6 text-end">
+            <button class="btn btn-outline-danger">Cancel</button>
+            <button class="btn btn-outline-primary">Draft</button>
+            <button class="btn btn-primary">Save</button>
+          </div>
+        </div>
+        <hr>
+        
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5>Application Information</h5>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-sm-12 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Application Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Human Capital Management System (HCMS)">
+                  </div>
+                  <div class="col-sm-6 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Division</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Choose Division...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Project Team</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Choose Project Team...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Category</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Choose Category...</option>
+                      <option value="1">Core</option>
+                      <option value="2">Support</option>
+                      <option value="3">Middleware</option>
+                      <option value="4">Digital</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Project Team</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Inhouse
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Vendor
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 mt-3">
+                    <label for="exampleFormControlInput1" class="form-label">Overview</label>
+                    <textarea class="form-control" id="exampleFormControlInput1" placeholder="Sehubungan dengan ..." rows="6"></textarea>
+                  </div>
+                  <div class="col-sm-12 mt-3">
+                    <label for="">Application Architecture</label>
+                    <img class="img-fluid mx-auto d-block" src="../assets/images/dragndrop.webp" width="500" alt="" srcset="">
+                  </div>
+                  <div class="col-sm-12 my-5 text-end">
+                    <button class="btn btn-primary" type="submit">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5>Service</h5>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <table class="table table-striped">
+                  <thead class="table-primary">
+                      <tr>
+                          <th>#</th>
+                          <th>Service Name</th>
+                          <th>Programming Language</th>
+                          <th>Category</th>
+                          <th>Machine</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <!-- Accordion Item 1 -->
+                      <tr>
+                        <td>1</td>
+                        <td><input type="text" class="form-control" name="" id="" placeholder="Service Name"></td>
+                        <td>
+                          <select class="form-select" name="" id="">
+                            <option value="">Choose Language...</option>
+                            <option value="1" selected>Javascript</option>
+                            <option value="2">Go</option>
+                            <option value="3">Python</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-select" name="" id="">
+                            <option value="">Choose Category...</option>
+                            <option value="1" selected>Service</option>
+                            <option value="2">Frontend</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="form-select" name="" id="">
+                            <option value="">Choose Machine...</option>
+                            <option value="1" selected>Virtual Machine</option>
+                            <option value="2">Openshift Container Platform</option>
+                            <option value="3">Google Cloud Platform</option>
+                          </select>
+                        </td>
+                        <td>
+                          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="false" aria-controls="accordion1">
+                            <i class="bi bi-chevron-right"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="6" class="hiddenRow">
+                          <div id="accordion1" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <div class="row">
+                                <div class="col-sm-2 mt-3">Repository</div>
+                                <div class="col-sm-10 mt-3">
+                                  <input type="text" name="" id="" class="form-control" placeholder="Nomor Test Case">
+                                </div>
+                                <div class="col-sm-2 mt-3">Configuration</div>
+                                <div class="col-sm-10 mt-3">
+                                  <textarea class="form-control" name="" id="" rows="10" placeholder="Configuration"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+                <p class="text-end my-3">
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-plus-circle"></i> Add Service
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h5>API Catalog</h5>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <table class="table table-striped">
+                  <thead class="table-primary">
+                    <tr>
+                      <th>#</th>
+                      <th class="text-center">Catalog</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="align-middle">1</td>
+                      <td>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">End Point</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <input type="text" id="endpoint-1" class="form-control" aria-describedby="passwordHelpInline" placeholder="/api/v1/user">
+                          </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">Method</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Choose Method...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">Header</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <table class="table">
+                              <thead class="table-primary">
+                                <tr>
+                                  <th>Field</th>
+                                  <th>Data Type</th>
+                                  <th>Mandatory</th>
+                                  <th>Description</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>x-user-id</td>
+                                  <td>string</td>
+                                  <td>YES</td>
+                                  <td>user ID dari agata</td>
+                                  <td>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i></button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">Request</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <table class="table">
+                              <thead class="table-primary">
+                                <tr>
+                                  <th>Field</th>
+                                  <th>Data Type</th>
+                                  <th>Mandatory</th>
+                                  <th>Description</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>id</td>
+                                  <td>string</td>
+                                  <td>YES</td>
+                                  <td>ID pada table user</td>
+                                  <td>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i></button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">Response</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <table class="table">
+                              <thead class="table-primary">
+                                <tr>
+                                  <th>Field</th>
+                                  <th>Data Type</th>
+                                  <th>Mandatory</th>
+                                  <th>Description</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>name</td>
+                                  <td>string</td>
+                                  <td>YES</td>
+                                  <td>Nama lengkap user</td>
+                                  <td>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i></button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="align-middle">2</td>
+                      <td>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">End Point</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <input type="text" id="endpoint-2" class="form-control" aria-describedby="passwordHelpInline" placeholder="/api/v1/user">
+                          </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">Method</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Choose Method...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">Header</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <table class="table">
+                              <thead class="table-primary">
+                                <tr>
+                                  <th>Field</th>
+                                  <th>Data Type</th>
+                                  <th>Mandatory</th>
+                                  <th>Description</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>x-user-id</td>
+                                  <td>string</td>
+                                  <td>YES</td>
+                                  <td>user ID dari agata</td>
+                                  <td>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i></button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">Request</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <table class="table">
+                              <thead class="table-primary">
+                                <tr>
+                                  <th>Field</th>
+                                  <th>Data Type</th>
+                                  <th>Mandatory</th>
+                                  <th>Description</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>id</td>
+                                  <td>string</td>
+                                  <td>YES</td>
+                                  <td>ID pada table user</td>
+                                  <td>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i></button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="row g-3 align-items-center mb-2">
+                          <div class="col-sm-2">
+                            <label for="inputPassword6" class="col-form-label">Response</label>
+                          </div>
+                          <div class="col-sm-10">
+                            <table class="table">
+                              <thead class="table-primary">
+                                <tr>
+                                  <th>Field</th>
+                                  <th>Data Type</th>
+                                  <th>Mandatory</th>
+                                  <th>Description</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>name</td>
+                                  <td>string</td>
+                                  <td>YES</td>
+                                  <td>Nama lengkap user</td>
+                                  <td>
+                                    <button class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i></button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="text-end my-3">
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-plus-circle"></i> Add API
+                  </button>
+                  <button class="btn btn-primary">
+                    Save
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                <h5>Modul / Menu / Sub Menu / Feature</h5>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="accordion" id="accordionHierarchy">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingModuleX">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleX" aria-expanded="true" aria-controls="collapseModuleX">
+                              Modul X
+                          </button>
+                      </h2>
+                      <div id="collapseModuleX" class="accordion-collapse collapse show" aria-labelledby="headingModuleX" data-bs-parent="#accordionHierarchy">
+                        <div class="accordion-body">
+                          <div class="row my-3 px-5">
+                            <div class="col-sm-12 mb-2">
+                              <label for="exampleFormControlInput1" class="form-label">Overview</label>
+                              <textarea class="form-control" name="" id="" rows="10" placeholder="Overview"></textarea>
+                            </div>
+                            <div class="col-sm-12 mb-2">
+                              <label for="exampleFormControlInput1" class="form-label">Flow</label>
+                              <div class="row my-2">
+                                <div class="col-sm-12">
+                                  <a class="btn btn-sm btn-link" href="#">Flow History ...</a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <input class="form-control" type="file" name="" id="">
+                                </div>
+                                <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlInput1" placeholder="1. Membuat ... 2. Membuat ..." rows="5"></textarea>
+                                </div>
+                                <div class="col-sm-1">
+                                  <button class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i></button>
+                                </div>
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="col-sm-12 mb-2">
+                              <label for="exampleFormControlInput1" class="form-label">Mockup</label>
+                              <div class="row my-2">
+                                <div class="col-sm-12">
+                                  <a class="btn btn-sm btn-link" href="#">Mockup History ...</a>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <input class="form-control" type="file" name="" id="">
+                                </div>
+                                <div class="col-sm-8">
+                                  <textarea class="form-control" id="exampleFormControlInput1" placeholder="1. Membuat ... 2. Membuat ..." rows="5"></textarea>
+                                </div>
+                                <div class="col-sm-1">
+                                  <button class="btn btn-outline-primary"><i class="bi bi-plus-circle"></i></button>
+                                </div>
+                              </div>
+                              <hr>
+                            </div>
+                            <div class="col-sm-12 mb-2">
+                              <label for="exampleFormControlInput1" class="form-label">Figma Link</label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="https://figma.com/xxxxx">
+                            </div>
+                          </div>
+                          <div class="accordion" id="accordionMenuA">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingMenuA">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuA" aria-expanded="true" aria-controls="collapseMenuA">
+                                  Menu A
+                                </button>
+                              </h2>
+                              <div id="collapseMenuA" class="accordion-collapse collapse" aria-labelledby="headingMenuA" data-bs-parent="#accordionMenuA">
+                                <div class="accordion-body">
+                                  <p>Penjelasan Menu A</p>
+                                  <div class="accordion" id="accordionSubMenuA1">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingSubMenuA1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubMenuA1" aria-expanded="true" aria-controls="collapseSubMenuA1">
+                                          Sub Menu A1
+                                        </button>
+                                      </h2>
+                                      <div id="collapseSubMenuA1" class="accordion-collapse collapse" aria-labelledby="headingSubMenuA1" data-bs-parent="#accordionSubMenuA1">
+                                        <div class="accordion-body">
+                                          <p>Penjelasan Sub Menu A1</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion" id="accordionSubMenuA2">
+                                      <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingSubMenuA2">
+                                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubMenuA2" aria-expanded="true" aria-controls="collapseSubMenuA2">
+                                                  Sub Menu A2
+                                              </button>
+                                          </h2>
+                                          <div id="collapseSubMenuA2" class="accordion-collapse collapse" aria-labelledby="headingSubMenuA2" data-bs-parent="#accordionSubMenuA2">
+                                              <div class="accordion-body">
+                                                  <p>Penjelasan Sub Menu A2</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingMenuB">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuB" aria-expanded="true" aria-controls="collapseMenuB">
+                                      Menu B
+                                  </button>
+                              </h2>
+                              <div id="collapseMenuB" class="accordion-collapse collapse" aria-labelledby="headingMenuB" data-bs-parent="#accordionMenuA">
+                                <div class="accordion-body">
+                                  <p>Penjelasan Menu B</p>
+                                  <div class="accordion" id="accordionSubMenuB1">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingSubMenuB1">
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubMenuB1" aria-expanded="true" aria-controls="collapseSubMenuB1">
+                                              Sub Menu B1
+                                          </button>
+                                      </h2>
+                                      <div id="collapseSubMenuB1" class="accordion-collapse collapse" aria-labelledby="headingSubMenuB1" data-bs-parent="#accordionSubMenuB1">
+                                        <div class="accordion-body">
+                                          <p>Penjelasan Sub Menu B1</p>
+                                          <div class="accordion" id="accordionFeature">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingFeature">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFeature" aria-expanded="true" aria-controls="collapseFeature">
+                                                  Feature
+                                                </button>
+                                              </h2>
+                                              <div id="collapseFeature" class="accordion-collapse collapse" aria-labelledby="headingFeature" data-bs-parent="#accordionFeature">
+                                                <div class="accordion-body">
+                                                  <p>Penjelasan Feature</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> <!-- accordionMenuA -->
+                        </div> <!-- accordion-body for Module X -->
+                      </div> <!-- collapseModuleX -->
+                  </div> <!-- accordion-item for Module X -->
+                </div> <!-- accordionHierarchy -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                <h5>History Project</h5>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <table class="table table-striped">
+                  <thead class="table-primary">
+                    <tr>
+                      <th>Date</th>
+                      <th>Project Name</th>
+                      <th>IT Project</th>
+                      <th>Overview</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01 Agustus 2024</td>
+                      <td>Penambahan Modul XYZ</td>
+                      <td><a href="#">https://pegadaian.atlassian.net</a></td>
+                      <td>
+                        <textarea class="form-control" name="" id="" rows="3">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper metus eget massa pulvinar imperdiet. Sed pulvinar ante malesuada lorem iaculis condimentum vel fringilla nibh. In ac hendrerit tortor. Maecenas sapien ligula, tempor et commodo eget, fringilla eget odio. Etiam vitae erat accumsan, iaculis mauris ac, ornare nunc. Curabitur sed.
+                        </textarea>
+                      </td>
+                      <td>
+                        <button class="btn btn-primary">
+                          Detail
+                          <i class="bi bi-chevron-right"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>01 Agustus 2023</td>
+                      <td>Penambahan Modul ABC</td>
+                      <td><a href="#">https://pegadaian.atlassian.net</a></td>
+                      <td>
+                        <textarea class="form-control" name="" id="" rows="3">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper metus eget massa pulvinar imperdiet. Sed pulvinar ante malesuada lorem iaculis condimentum vel fringilla nibh. In ac hendrerit tortor. Maecenas sapien ligula, tempor et commodo eget, fringilla eget odio. Etiam vitae erat accumsan, iaculis mauris ac, ornare nunc. Curabitur sed.
+                        </textarea>
+                      </td>
+                      <td>
+                        <button class="btn btn-primary">
+                          Detail
+                          <i class="bi bi-chevron-right"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                <h5>Versioning</h5>
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="text-end my-3">
+                  <button class="btn btn-outline-primary">
+                    <i class="bi bi-plus-circle"></i> Add Version
+                  </button>
+                </p>
+                <table class="table table-striped">
+                  <thead class="table-primary">
+                    <tr>
+                      <th>Version</th>
+                      <th>Description</th>
+                      <th>Team Name</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2.1</td>
+                      <td>Perbaikan nama approval</td>
+                      <td>Squad Kita</td>
+                      <td>24 feb 2020</td>
+                    </tr>
+                    <tr>
+                      <td>2.0</td>
+                      <td>Perbaikan di sana</td>
+                      <td>Squad Kita</td>
+                      <td>24 feb 2019</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="text-end my-3">
+                  <button class="btn btn-primary">Save</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $('#checkbox-new-1').change(function() {
+          const isChecked = $('#checkbox-new-1').prop("checked") == true;
+          if(isChecked) {
+            $('#endpoint-1').replaceWith('' +
+              '<select class="form-control" id="endpoint-1" name="txtQuantity">' +
+              '<option value="">Choose Existing API...</option>' +
+              '<option value="1">POST /api/v1</option>' +
+              '<option value="2">POST /api/v3</option>' +
+              '</select>'
+            );
+          } else {
+            $('#endpoint-1').replaceWith('<input type="text" id="endpoint-1" class="form-control" aria-describedby="passwordHelpInline" placeholder="/api/v1/user">');
+          }
+        });
+        
+      });
+    </script>
+</body>
+
+</html>
