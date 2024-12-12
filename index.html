@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tree"></div>
+    <script src="familytree.js"></script>
+    <script>
+        let family = new FamilyTree("#tree", {
+            // options
+            nodeBinding: {
+                field_0: "name"
+            },  
+            nodes: [
+                { id: 1, name: "GLUNTUNG ALU GENJRONG", gender: "male" },
+                { id: 2, mid: 1, name: "IRODIKROMO", gender: "male" },
+                { id: 3, mid: 2, name: "Tidak Diketahui", gender: "male" },
+                { id: 4, pids: [7], mid: 3, name: "PAIMAN (DARMO)", gender: "male" },
+                { id: 5, name: "HANGGOJOYO", gender: "male" },
+                { id: 6, mid: 5, name: "SUBANDISONO", gender: "male" },
+                { id: 7, pids: [4], mid: 6, name: "MUSKANAH", gender: "female" },
+                { id: 8, mid: 4, fid: 7, name: "PAIDI", gender: "male" },
+                { id: 9, pids: [11], mid: 4, fid: 7, name: "SURADJI", gender: "male" },
+                { id: 10, mid: 4, fid: 7, name: "JUREMI", gender: "female" },
+                { id: 11, pids: [9], mid: 12, name: "ISAH", gender: "female" },
+                { id: 12, name: "IDI", gender: "male" },
+                { id: 13, pids: [20], mid: 9, fid: 11, name: "SRI MULYATI", gender: "female" },
+                { id: 14, pids: [25], mid: 9, fid: 11, name: "MULYADI", gender: "male" },
+                { id: 15, pids: [33], mid: 9, fid: 11, name: "MULYONO", gender: "male" },
+                { id: 16, pids: [40], mid: 9, fid: 11, name: "MULYAWAN", gender: "male" },
+                { id: 17, pids: [46], mid: 9, fid: 11, name: "SRI MULYANI", gender: "female" },
+                { id: 18, pids: [50], mid: 9, fid: 11, name: "SRI MULYASIH", gender: "female" },
+                { id: 19, pids: [51], mid: 9, fid: 11, name: "MULYANTO", gender: "male" },
+                { id: 20, pids: [13], name: "SUAMI SRI MULYATI", gender: "male" },
+                { id: 21, pids: [22], mid: 20, fid: 13, name: "TEGUH NGADYANTO", gender: "male" },
+                { id: 22, pids: [21], name: "ISTRI TEGUH NGADYANTO", gender: "female" },
+                { id: 23, mid: 21, fid: 22, name: "NATASYA SUCI AMALIA", gender: "female" },
+                { id: 24, mid: 21, fid: 22, name: "MUHAMMAD IQBAL ATHALLAH", gender: "male" },
+                { id: 25, pids: [14], name: "ISTRI MULYADI", gender: "female" },
+                { id: 26, pids: [27], mid: 14, fid: 25, name: "FITRI IMANDARI MIWA", gender: "female" },
+                { id: 27, pids: [26], name: "PUGUH", gender: "male" },
+                { id: 28, mid: 26, fid: 27, name: "HADI BROTO HARTONO", gender: "male" },
+                { id: 29, pids: [30], mid: 14, fid: 25, name: "BANGKIT RAHMANTO MIWA", gender: "male" },
+                { id: 30, pids: [29], name: "ISTRI BANGKIT", gender: "female" },
+                { id: 31, pids: [32], mid: 14, fid: 25, name: "NINA DESKARTIKA MIWA", gender: "female" },
+                { id: 32, pids: [31], name: "SUAMI NINA", gender: "male" },
+                { id: 33, pids: [15], name: "ISTRI MULYONO", gender: "female" },
+                { id: 34, pids: [35], mid: 15, fid: 33, name: "CITRA KHARISMAWATI", gender: "female" },
+                { id: 35, pids: [34], name: "SUAMI CITRA", gender: "male" },
+                { id: 36, mid: 35, fid: 34, name: "ZAFRAN HADI IBRAHIM", gender: "male" },
+                { id: 37, mid: 35, fid: 34, name: "ALFARIZI WIRA IBRAHIM", gender: "male" },
+                { id: 38, pids: [39], mid: 15, fid: 33, name: "TULUS BAKTIRAWAN", gender: "male" },
+                { id: 39, pids: [38], name: "ISTRI TULUS", gender: "female" },
+                { id: 40, pids: [16], name: "MARTANI", gender: "female" },
+                { id: 41, pids: [42], mid: 16, fid: 40, name: "HANDARU MULYA PUTRA", gender: "male" },
+                { id: 42, pids: [41], name: "WANDA", gender: "female" },
+                { id: 43, pids: [44], mid: 16, fid: 40, name: "IKLAS ADHI SEPTIAWAN", gender: "male" },
+                { id: 44, pids: [43], name: "ANITA FITRIANI HIDAYAT", gender: "female" },
+                { id: 45, mid: 43, fid: 44, name: "AKSARA SAFIY ADHIANTARA", gender: "male" },
+                { id: 46, pids: [17], name: "SALIM", gender: "male" },
+                { id: 47, mid: 46, fid: 17, name: "DENI IBRAHIM ALATTAS", gender: "male" },
+                { id: 49, mid: 46, fid: 17, name: "SHARIVA HANNYZA ALATTAS", gender: "female" },
+                { id: 50, pids: [18], name: "YONI", gender: "male" },
+                { id: 51, pids: [19], name: "SANTI", gender: "female" },
+                { id: 52, mid: 26, fid: 27, name: "ADIK HADI", gender: "female" },
+                { id: 53, mid: 29, fid: 30, name: "ANAK BANGKIT", gender: "female" },
+                { id: 54, mid: 32, fid: 31, name: "ANAK NINA", gender: "female" },
+                { id: 55, mid: 38, fid: 39, name: "KIA", gender: "female" },
+                { id: 56, mid: 38, fid: 39, name: "AYESHA", gender: "female" },
+            ]
+        });
+    
+     
+    
+    </script>
+</body>
+</html>
