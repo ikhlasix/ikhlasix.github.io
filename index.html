@@ -12,13 +12,14 @@
         let family = new FamilyTree("#tree", {
             // options
             nodeBinding: {
-                field_0: "name"
+                field_0: "name",
+                field_1: "nickname"
             },  
             nodes: [
                 { id: 1, name: "GLUNTUNG ALU GENJRONG", gender: "male" },
                 { id: 2, mid: 1, name: "IRODIKROMO", gender: "male" },
                 { id: 3, mid: 2, name: "Tidak Diketahui", gender: "male" },
-                { id: 4, pids: [7], mid: 3, name: "PAIMAN (DARMO)", gender: "male" },
+                { id: 4, pids: [7], mid: 3, name: "PAIMAN", gender: "male", nickname: "DARMO" },
                 { id: 5, name: "HANGGOJOYO", gender: "male" },
                 { id: 6, mid: 5, name: "SUBANDISONO", gender: "male" },
                 { id: 7, pids: [4], mid: 6, name: "MUSKANAH", gender: "female" },
@@ -57,13 +58,13 @@
                 { id: 40, pids: [16], name: "MARTANI", gender: "female" },
                 { id: 41, pids: [42], mid: 16, fid: 40, name: "HANDARU MULYA PUTRA", gender: "male" },
                 { id: 42, pids: [41], name: "WANDA", gender: "female" },
-                { id: 43, pids: [44], mid: 16, fid: 40, name: "IKLAS ADHI SEPTIAWAN", gender: "male" },
+                { id: 43, pids: [44], mid: 16, fid: 40, name: "IKLAS ADHI SEPTIAWAN", gender: "male", img: "iklas.jpg" },
                 { id: 44, pids: [43], name: "ANITA FITRIANI HIDAYAT", gender: "female" },
                 { id: 45, mid: 43, fid: 44, name: "AKSARA SAFIY ADHIANTARA", gender: "male" },
                 { id: 46, pids: [17], name: "SALIM ABDULLAH ALATTAS", gender: "male" },
                 { id: 47, mid: 46, fid: 17, name: "DENI IBRAHIM ALATTAS", gender: "male" },
                 { id: 49, mid: 46, fid: 17, name: "SHARIVA HANNYZA ALATTAS", gender: "female" },
-                { id: 50, pids: [18], name: "YONI", gender: "male" },
+                { id: 50, pids: [18], name: "SYAHRONI", gender: "male", nickname: "YONI" },
                 { id: 51, pids: [19], name: "FEBRIYANTI", gender: "female" },
                 { id: 52, mid: 26, fid: 27, name: "ANAK FITRI 2", gender: "female" },
                 { id: 53, mid: 29, fid: 30, name: "ANAK DENO 1", gender: "female" },
@@ -72,10 +73,7 @@
                 { id: 56, mid: 38, fid: 39, name: "AYESHA", gender: "female" },
                 { id: 57, mid: 29, fid: 30, name: "QIANU ACHMAD JUSUF", gender: "male" },
             ]
-        });
-    
-     
-    
+        });    
     </script>
 </body>
 </html>
